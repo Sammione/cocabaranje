@@ -2,7 +2,7 @@
    FOOTER MODULE
    ============================================ */
 .footer {
-  background: #0a1628;
+  background: #111111;
   color: rgba(255,255,255,0.7);
   position: relative;
 }
@@ -44,7 +44,7 @@
 
 .logoIcon {
   flex-shrink: 0;
-  filter: drop-shadow(0 2px 8px rgba(201,162,39,0.3));
+  filter: drop-shadow(0 2px 8px rgba(179,139,69,0.3));
 }
 
 .logoMain {
@@ -59,7 +59,7 @@
 .logoSub {
   display: block;
   font-size: 0.68rem;
-  color: #c9a227;
+  color: #b38b45;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -80,7 +80,7 @@
   font-size: 0.8rem;
   color: rgba(255,255,255,0.45);
   font-style: italic;
-  border-left: 2px solid rgba(201,162,39,0.3);
+  border-left: 2px solid rgba(179,139,69,0.3);
   padding-left: 12px;
 }
 
@@ -100,7 +100,7 @@
   display: block;
   width: 30px;
   height: 2px;
-  background: linear-gradient(90deg, #c9a227, #f0c842);
+  background: #b38b45;
   border-radius: 2px;
   margin-top: 8px;
 }
@@ -124,7 +124,7 @@
 }
 
 .link:hover {
-  color: #f0c842;
+  color: #ffffff;
   transform: translateX(4px);
 }
 
@@ -150,7 +150,7 @@
 
 .timeVal {
   font-size: 0.78rem;
-  color: #c9a227;
+  color: #b38b45;
 }
 
 /* Contact List */
@@ -173,7 +173,7 @@
 .contactItem svg {
   flex-shrink: 0;
   margin-top: 2px;
-  color: #c9a227;
+  color: #b38b45;
 }
 
 /* Divider */
@@ -213,15 +213,42 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .inner {
+    padding: 48px 5% 32px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding: 36px 20px 28px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
+
   .brandCol {
     grid-column: 1;
   }
+
+  .brandDesc {
+    max-width: 100%;
+  }
+
   .bottom {
     flex-direction: column;
     text-align: center;
+    gap: 8px;
+  }
+
+  .topWave svg {
+    height: 30px;
   }
 }

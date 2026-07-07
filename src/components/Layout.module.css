@@ -14,3 +14,15 @@
   flex: 1;
   padding-top: 136px;
 }
+
+@media (max-width: 900px) {
+  .main {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding-top: 70px;
+  }
+}

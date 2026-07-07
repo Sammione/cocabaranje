@@ -4,7 +4,7 @@
 
 /* Active route link */
 .activeLink {
-  color: #c9a227 !important;
+  color: #b38b45 !important;
 }
 .activeLink::after {
   width: 100% !important;
@@ -51,7 +51,7 @@
 
 .logoIcon {
   flex-shrink: 0;
-  filter: drop-shadow(0 2px 8px rgba(201,162,39,0.4));
+  filter: drop-shadow(0 2px 8px rgba(179,139,69,0.3));
   transition: transform 0.3s ease;
 }
 
@@ -76,7 +76,7 @@
 .logoSub {
   font-size: 0.7rem;
   font-weight: 400;
-  color: #000000;
+  color: #666666;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -99,7 +99,7 @@
   position: relative;
   font-size: 0.88rem;
   font-weight: 500;
-  color: #000000;
+  color: #333333;
   text-decoration: none;
   padding: 6px 14px;
   border-radius: 6px;
@@ -115,14 +115,14 @@
   transform: translateX(-50%);
   width: 0;
   height: 1.5px;
-  background: #c9a227;
+  background: #b38b45;
   border-radius: 2px;
   transition: width 0.25s ease;
 }
 
 .navLink:hover {
   color: #000000;
-  background: rgba(0,0,0,0.07);
+  background: rgba(0,0,0,0.04);
 }
 
 .navLink:hover::after {
@@ -132,22 +132,23 @@
 /* Join Button */
 .joinBtn {
   flex-shrink: 0;
-  background: linear-gradient(135deg, #c9a227, #f0c842);
-  color: #0a1628;
+  background: #111111;
+  color: #ffffff;
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px 24px;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(201,162,39,0.35);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
 .joinBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(201,162,39,0.5);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+  background: #333333;
 }
 
 /* Hamburger */
@@ -220,34 +221,41 @@
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #000000;
+  color: #111111;
   text-decoration: none;
   padding: 12px 32px;
   border-radius: 12px;
   transition: all 0.25s ease;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
 .mobileLink:hover {
-  color: #000000;
-  background: rgba(0,0,0,0.05);
+  color: #b38b45;
+  background: rgba(0,0,0,0.03);
 }
 
 .mobileJoinBtn {
   display: inline-block;
   margin-top: 16px;
-  background: linear-gradient(135deg, #c9a227, #f0c842);
-  color: #0a1628;
+  background: #111111;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
   padding: 14px 40px;
   border-radius: 12px;
   text-decoration: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
+  .header {
+    top: 0;
+    padding: 12px 0;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(16px);
+  }
+
   .nav, .joinBtn {
     display: none;
   }
@@ -258,5 +266,24 @@
 
   .mobileMenu {
     display: block;
+  }
+
+  .logoMain {
+    font-size: 0.9rem;
+  }
+
+  .logoSub {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .mobileLink {
+    font-size: 1.3rem;
+    padding: 10px 24px;
   }
 }

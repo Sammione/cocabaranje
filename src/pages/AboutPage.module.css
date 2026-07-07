@@ -13,14 +13,14 @@
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #c9a227;
+  color: #b38b45;
   margin-bottom: 10px;
 }
 
 .sectionTitle {
   font-family: 'Inter', sans-serif;
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-  color: #0f2347;
+  color: #111111;
   font-weight: 700;
   margin-bottom: 12px;
   line-height: 1.2;
@@ -33,7 +33,7 @@
 
 .sectionSubtitle {
   font-size: 1rem;
-  color: #4a4a6a;
+  color: #666666;
   line-height: 1.8;
   max-width: 540px;
   margin: 0 auto;
@@ -343,8 +343,27 @@
   .leadershipGrid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .story, .distinctives, .leadership {
+    padding: 70px 0;
+  }
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
   .storyStats { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .story, .distinctives, .leadership {
+    padding: 48px 0;
+  }
+  .sectionHeader {
+    margin-bottom: 32px;
+  }
+  .storyStats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .distinctivesGrid { grid-template-columns: 1fr; }
   .leadershipGrid { grid-template-columns: 1fr; }
+  .container {
+    padding: 0 20px;
+  }
 }
