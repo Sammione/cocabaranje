@@ -1,0 +1,181 @@
+/* ============================================
+   ABOUT MODULE
+   ============================================ */
+.about {
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Left */
+.label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c9a227;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: #0f2347;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #c9a227;
+}
+
+.titleLine {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a227, #f0c842);
+  border-radius: 2px;
+  margin-bottom: 28px;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #4a4a6a;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.locationCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #faf8f2;
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-top: 28px;
+}
+
+.locationIcon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #c9a227, #f0c842);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a1628;
+  flex-shrink: 0;
+}
+
+.locationTitle {
+  font-weight: 600;
+  color: #0f2347;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.locationAddr {
+  font-size: 0.88rem;
+  color: #4a4a6a;
+  line-height: 1.5;
+}
+
+/* Right — Values Grid */
+.right {
+  position: sticky;
+  top: 100px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.valueCard {
+  background: #faf8f2;
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: 18px;
+  padding: 28px 22px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.valueCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a227, #f0c842);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(10, 22, 40, 0.12);
+  border-color: rgba(201, 162, 39, 0.35);
+}
+
+.valueCard:hover::before {
+  transform: scaleX(1);
+}
+
+.valueIcon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, rgba(201,162,39,0.12), rgba(240,200,66,0.2));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a227;
+  margin-bottom: 16px;
+}
+
+.valueTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f2347;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.valueDesc {
+  font-size: 0.85rem;
+  color: #4a4a6a;
+  line-height: 1.65;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .right {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}

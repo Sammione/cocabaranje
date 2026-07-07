@@ -1,0 +1,287 @@
+/* ============================================
+   SERMONS PAGE
+   ============================================ */
+.page {
+  background: #f5f7fc;
+  padding: 80px 0 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Channel banner */
+.channelBanner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border: 1.5px solid rgba(255, 0, 0, 0.15);
+  border-radius: 18px;
+  padding: 20px 28px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(10,22,40,0.06);
+}
+
+.ytIcon {
+  width: 56px;
+  height: 56px;
+  background: #ff0000;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.channelInfo { flex: 1; }
+
+.channelTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #0f2347;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.channelSub {
+  font-size: 0.84rem;
+  color: #666;
+}
+
+.subscribeBtn {
+  background: #ff0000;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 10px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.subscribeBtn:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,0,0,0.3);
+}
+
+/* Filter pills */
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.filterBtn {
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1.5px solid rgba(201,162,39,0.3);
+  background: #ffffff;
+  color: #4a4a6a;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filterBtn:hover { border-color: #c9a227; color: #0f2347; }
+.filterBtn.active {
+  background: linear-gradient(135deg, #c9a227, #f0c842);
+  color: #0a1628;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(201,162,39,0.35);
+}
+
+/* Sermon grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(10,22,40,0.07);
+  border: 1px solid rgba(201,162,39,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(10,22,40,0.13);
+  border-color: rgba(201,162,39,0.3);
+}
+
+/* Thumbnail */
+.thumb {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background: #0f2347;
+}
+
+.thumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .thumbImg { transform: scale(1.05); }
+
+.thumbPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #0a1628, #173f8a);
+  color: rgba(255,255,255,0.5);
+  font-size: 0.8rem;
+}
+
+.playOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: rgba(0,0,0,0.3);
+}
+
+.card:hover .playOverlay { opacity: 1; }
+
+.playBtn {
+  width: 52px;
+  height: 52px;
+  background: rgba(255,0,0,0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .playBtn { transform: scale(1); }
+
+.categoryBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(201,162,39,0.9);
+  color: #0a1628;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* Card body */
+.cardBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: #c9a227;
+  font-weight: 600;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #0f2347;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.preacher {
+  font-size: 0.82rem;
+  color: #888;
+  font-style: italic;
+}
+
+.desc {
+  font-size: 0.84rem;
+  color: #4a4a6a;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.watchBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff0000;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.84rem;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: all 0.25s ease;
+  width: fit-content;
+}
+
+.watchBtn:hover {
+  background: #cc0000;
+  transform: translateY(-1px);
+}
+
+.comingSoon {
+  font-size: 0.82rem;
+  color: #aaa;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* Hint */
+.hint {
+  margin-top: 48px;
+  background: #fff;
+  border: 1.5px dashed rgba(201,162,39,0.35);
+  border-radius: 14px;
+  padding: 20px 24px;
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+.hint code {
+  background: #f0f0f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  color: #0f2347;
+}
+
+/* Responsive */
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 560px) {
+  .grid { grid-template-columns: 1fr; }
+  .channelBanner { flex-wrap: wrap; }
+}

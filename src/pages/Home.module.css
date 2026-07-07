@@ -1,0 +1,114 @@
+.quickLinks {
+  background: #f5f7fc;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.qlHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.qlLabel {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c9a227;
+  margin-bottom: 10px;
+}
+
+.qlTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #0f2347;
+  font-weight: 700;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1.5px solid rgba(201,162,39,0.15);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(10,22,40,0.06);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a227, #f0c842);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(201,162,39,0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(10,22,40,0.12);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(201,162,39,0.12), rgba(240,200,66,0.08));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a227;
+  margin-bottom: 4px;
+}
+
+.cardLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #0f2347;
+  font-weight: 700;
+}
+
+.cardDesc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.cardArrow {
+  font-size: 1.2rem;
+  color: #c9a227;
+  font-weight: 700;
+  margin-top: 4px;
+  transition: transform 0.2s;
+}
+
+.card:hover .cardArrow { transform: translateX(6px); }
+
+@media (max-width: 900px) {
+  .cardGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .cardGrid { grid-template-columns: 1fr; }
+}

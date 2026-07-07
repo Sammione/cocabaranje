@@ -1,0 +1,311 @@
+/* ============================================
+   SCHEDULE MODULE
+   ============================================ */
+.schedule {
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c9a227;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #0f2347;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: #4a4a6a;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 8px;
+  background: #f5f7fc;
+  border-radius: 12px;
+  padding: 6px;
+  margin-bottom: 36px;
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a4a6a;
+  background: transparent;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.tab:hover {
+  color: #0f2347;
+  background: rgba(15, 35, 71, 0.06);
+}
+
+.tab.active {
+  background: #ffffff;
+  color: #0f2347;
+  box-shadow: 0 2px 12px rgba(10, 22, 40, 0.1);
+}
+
+/* Times Grid */
+.timesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #faf8f2;
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: 16px;
+  padding: 22px 26px;
+  transition: all 0.3s ease;
+}
+
+.timeCard:hover {
+  transform: translateX(6px);
+  border-color: rgba(201, 162, 39, 0.4);
+  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.08);
+}
+
+.highlightCard {
+  background: linear-gradient(135deg, rgba(23,63,138,0.05), rgba(30,86,192,0.08));
+  border-color: rgba(23, 63, 138, 0.2);
+}
+
+.timeDayBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #c9a227, #f0c842);
+  border-radius: 10px;
+  padding: 10px 16px;
+  min-width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.timeDayShort {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0a1628;
+  line-height: 1;
+}
+
+.timeDayFull {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: rgba(10, 22, 40, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 3px;
+}
+
+.timeInfo {
+  flex: 1;
+}
+
+.timeName {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f2347;
+  margin-bottom: 6px;
+}
+
+.timeHours {
+  font-size: 0.9rem;
+  color: #4a4a6a;
+  font-weight: 500;
+}
+
+.timeIcon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+/* Info Box */
+.infoBox {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #0f2347, #173f8a);
+  border-radius: 16px;
+  padding: 24px 26px;
+  margin-top: 8px;
+}
+
+.infoIcon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0c842;
+  flex-shrink: 0;
+}
+
+.infoTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.infoText {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+/* Events List */
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.eventCard {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #faf8f2;
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: 18px;
+  padding: 24px 26px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.eventCard:hover {
+  transform: translateX(6px);
+  border-color: rgba(201, 162, 39, 0.4);
+  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.08);
+}
+
+.eventDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #0f2347, #173f8a);
+  border-radius: 12px;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.eventMonth {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #f0c842;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.eventDay {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 2px 0;
+}
+
+.eventYear {
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.05em;
+}
+
+.eventInfo {
+  flex: 1;
+}
+
+.eventBadge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.eventName {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f2347;
+  margin-bottom: 6px;
+}
+
+.eventDesc {
+  font-size: 0.85rem;
+  color: #4a4a6a;
+  line-height: 1.6;
+}
+
+.eventArrow {
+  color: #c9a227;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.eventCard:hover .eventArrow {
+  transform: translateX(6px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+  }
+  .timeCard, .eventCard {
+    flex-wrap: wrap;
+  }
+}

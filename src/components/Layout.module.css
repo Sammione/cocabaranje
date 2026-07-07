@@ -1,0 +1,16 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Home page — Hero takes care of its own height */
+.mainHome {
+  flex: 1;
+}
+
+/* Inner pages — push below sticky banner (56px) + navbar (80px) = 136px */
+.main {
+  flex: 1;
+  padding-top: 136px;
+}
