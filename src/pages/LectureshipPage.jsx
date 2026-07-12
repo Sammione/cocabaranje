@@ -5,7 +5,7 @@ import styles from './LectureshipPage.module.css'
 const EVENT = {
   theme: 'Transformed by Grace',
   date: 'August 14–16, 2025',
-  venue: 'No. 29 Custom Bus Stop, Abaranje, Ikotun, Lagos',
+  venue: '29,Sete Aiyede Street, Off Kwaru family way, Custom bus stop, Abaranje,',
   countdown: 'August 14, 2025',
 }
 

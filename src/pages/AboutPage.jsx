@@ -7,7 +7,7 @@ import styles from './AboutPage.module.css'
 const leadership = [
   {
     id: 'leader-preacher',
-    name: 'Bro. [Preacher Name]',
+    name: 'Bro. Afolabi Akinyemi',
     role: 'Preacher / Evangelist',
     photo: '/images/team/preacher.png',
     bio: 'Our preacher faithfully proclaims the Word of God every Sunday, guiding the congregation in truth, love, and service to Christ.',
@@ -15,19 +15,11 @@ const leadership = [
   },
   {
     id: 'leader-secretary',
-    name: 'Sis. [Secretary Name]',
+    name: 'Bro. Busayo Oluyemi',
     role: 'Church Secretary',
     photo: '/images/team/secretary.png',
     bio: 'Our secretary coordinates church communications, keeps records, and ensures the smooth administration of our congregation.',
     email: 'secretary@churchofchristabaranje.org',
-  },
-  {
-    id: 'leader-elder',
-    name: 'Bro. [Elder Name]',
-    role: 'Elder / Overseer',
-    photo: '/images/team/elder.png',
-    bio: 'Serving as a shepherd of the flock, our elder oversees the spiritual welfare of the congregation and provides godly counsel.',
-    email: '',
   },
 ]
 
@@ -83,7 +75,7 @@ export default function AboutPage() {
               <h2 className={styles.sectionTitle}>The Church of Christ at Abaranje-Ikotun</h2>
               <p>
                 The Church of Christ at Abaranje-Ikotun is a non-denominational, autonomous congregation
-                located at No. 29 Custom Bus Stop, Abaranje, Ikotun, Lagos — committed to restoring
+                located at 29,Sete Aiyede Street, Off Kwaru family way, Custom bus stop, Abaranje, — committed to restoring
                 the first-century pattern of the church as revealed in the New Testament.
               </p>
               <p>
@@ -194,7 +186,7 @@ export default function AboutPage() {
       <section className={styles.cta}>
         <div className={styles.ctaInner}>
           <h2>Come Worship With Us</h2>
-          <p>Every Sunday at 8:30 AM · No. 29 Custom Bus Stop, Abaranje, Ikotun, Lagos</p>
+          <p>Every Sunday at 8:30 AM · 29,Sete Aiyede Street, Off Kwaru family way, Custom bus stop, Abaranje,</p>
           <div className={styles.ctaBtns}>
             <Link to="/#contact" className={styles.ctaPrimary}>Get in Touch</Link>
             <Link to="/sermons" className={styles.ctaSecondary}>Watch Sermons</Link>

@@ -62,7 +62,7 @@ export default function About() {
             speaks and remaining silent where the Bible is silent.
           </p>
           <p className={styles.desc}>
-            Located at No. 29 Custom Bus Stop, Abaranje, Ikotun, Lagos — we are
+            Located at 29,Sete Aiyede Street, Off Kwaru family way, Custom bus stop, Abaranje, — we are
             a welcoming community of believers committed to love, truth, and service.
           </p>
 
@@ -75,7 +75,7 @@ export default function About() {
             </div>
             <div>
               <p className={styles.locationTitle}>Our Location</p>
-              <p className={styles.locationAddr}>No. 29 Custom Bus Stop, Abaranje, Ikotun, Lagos</p>
+              <p className={styles.locationAddr}>29,Sete Aiyede Street, Off Kwaru family way, Custom bus stop, Abaranje,</p>
             </div>
           </div>
         </div>
