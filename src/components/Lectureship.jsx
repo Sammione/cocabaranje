@@ -49,7 +49,7 @@ export default function Lectureship() {
               </svg>
             </a>
             <div className={styles.countdown}>
-              <span className={styles.countdownLabel}>📍 No. 29 Custom Bus Stop, Abaranje, Ikotun</span>
+              <span className={styles.countdownLabel}>📍 29, Sete Aiyede Street, Off Kwaru family way, Custom bus stop, Abaranje</span>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className={styles.contactLabel}>Address</p>
-                <p className={styles.contactValue}>No. 29 Custom Bus Stop, Abaranje<br />Ikotun, Lagos, Nigeria</p>
+                <p className={styles.contactValue}>29, Sete Aiyede Street, Off Kwaru family way<br />Custom bus stop, Abaranje</p>
               </div>
             </div>
 

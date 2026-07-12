@@ -25,7 +25,7 @@ export default function MapSection() {
               </div>
               <div>
                 <h3 className={styles.infoTitle}>Our Address</h3>
-                <p className={styles.infoText}>No. 29 Custom Bus Stop<br/>Abaranje, Ikotun, Lagos<br/>Nigeria</p>
+                <p className={styles.infoText}>29,Sete Aiyede Street,<br/>Off Kwaru family way,<br/>Custom bus stop, Abaranje</p>
               </div>
             </div>
 
@@ -51,12 +51,12 @@ export default function MapSection() {
               </div>
               <div>
                 <h3 className={styles.infoTitle}>Landmark</h3>
-                <p className={styles.infoText}>Near Custom Bus Stop<br/>Off Ikotun-Igando Road</p>
+                <p className={styles.infoText}>Near Custom Bus Stop<br/>Off Kwaru family way</p>
               </div>
             </div>
 
             <a
-              href="https://maps.google.com/?q=Abaranje+Ikotun+Lagos+Nigeria"
+              href="https://maps.google.com/?q=29+Sete+Aiyede+Street+Abaranje+Lagos"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.directionsBtn}
@@ -74,7 +74,7 @@ export default function MapSection() {
             <div className={styles.mapFrame}>
               <iframe
                 title="Church of Christ Abaranje-Ikotun Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5!2d3.279!3d6.601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93b1b7b7b7b7%3A0x1234!2sAbaranje%2C+Ikotun%2C+Lagos!5e0!3m2!1sen!2sng!4v1683000000000!5m2!1sen!2sng"
+                src="https://maps.google.com/maps?q=29%20Sete%20Aiyede%20Street%20Abaranje%20Lagos&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

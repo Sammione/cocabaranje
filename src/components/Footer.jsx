@@ -107,7 +107,7 @@ export default function Footer() {
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M7 2C5.07 2 3.5 3.57 3.5 5.5 3.5 8.13 7 12 7 12s3.5-3.87 3.5-6.5C10.5 3.57 8.93 2 7 2zM7 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" stroke="currentColor" strokeWidth="1.2"/>
                 </svg>
-                <span>No. 29 Custom Bus Stop,<br/>Abaranje, Ikotun, Lagos</span>
+                <span>29, Sete Aiyede Street,<br/>Off Kwaru family way,<br/>Custom bus stop, Abaranje</span>
               </li>
               <li className={styles.contactItem}>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

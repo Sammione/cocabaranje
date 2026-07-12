@@ -9,7 +9,7 @@ const leadership = [
     id: 'leader-preacher',
     name: 'Bro. Afolabi Akinyemi',
     role: 'Preacher / Evangelist',
-    photo: '/images/team/preacher.png',
+    photo: '/images/team/preacher.jpg',
     bio: 'Our preacher faithfully proclaims the Word of God every Sunday, guiding the congregation in truth, love, and service to Christ.',
     email: 'preacher@churchofchristabaranje.org',
   },
